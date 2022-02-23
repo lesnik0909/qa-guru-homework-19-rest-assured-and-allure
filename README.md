@@ -49,16 +49,16 @@ RestAssured.given().filter(new SwaggerCoverageRestAssured())
 ```
 Для настройки добавить файл coverage.json в resources.
 
-###Настройка в Jenkins
+### Настройка в Jenkins
 
-1. Т.к. директория swagger-coverage-output располагается в корне проекта (жестко задано 
+**1.** Т.к. директория swagger-coverage-output располагается в корне проекта (жестко задано 
 в коде), необходимо перед выполнением сборки добавить команду на удаление директории 
 для очистки старых результатов
 ```sh
 #delete directory swagger-coverage-output
 rm -rf swagger-coverage-output
 ```
-2. После выполнение сборки добавить команду на скачивание swagger-coverage-commandline
+**2.** После выполнение сборки добавить команду на скачивание swagger-coverage-commandline
 ```sh
 cd ..
 
@@ -69,7 +69,7 @@ if [ ! -f "$FILE" ]; then
    unzip swagger-coverage-1.4.4.zip
 fi
 ```
-3. Добавить команду на скачивание документации Swagger тестируемого сервиса и запуск swagger-coverage-commandline
+**3.** Добавить команду на скачивание документации Swagger тестируемого сервиса и запуск swagger-coverage-commandline
 ```sh
 cd build
 
@@ -85,11 +85,11 @@ wget -O swagger.json https://petstore.swagger.io/v2/swagger.json
 * Путь к скаченной Swagger документации (ключ ``-s``)
 * Путь к сгенерированным файлам (ключ ``-i``)
 
-4. Добавить создание HTML отчета, например, через плагин Publish HTML. В нем указать
+**4.** Добавить создание HTML отчета, например, через плагин Publish HTML. В нем указать
 
 * HTML directory to archive - ``build``
 * Index page[s] - ``swagger-coverage-report.html`` (название из файла coverage.json)
 * Report title - ``Swagger-coverage``
 
-5. После выполнения сборки появится HTML отчет.
+**5.** После выполнения сборки появится HTML отчет.
 Если в отчете в Jenkins не отображаются стили CSS, то решение описано по [ссылке](https://stackoverflow.com/questions/35783964/jenkins-html-publisher-plugin-no-css-is-displayed-when-report-is-viewed-in-j/35785788#35785788).

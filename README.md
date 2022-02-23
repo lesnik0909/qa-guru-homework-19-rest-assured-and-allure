@@ -92,4 +92,4 @@ wget -O swagger.json https://petstore.swagger.io/v2/swagger.json
 * Report title - ``Swagger-coverage``
 
 **5.** После выполнения сборки появится HTML отчет.
-Если в отчете в Jenkins не отображаются стили CSS, то решение описано по [ссылке](https://stackoverflow.com/questions/35783964/jenkins-html-publisher-plugin-no-css-is-displayed-when-report-is-viewed-in-j/35785788#35785788).
+Если в отчете в Jenkins не отображаются CSS, то решение описано по [ссылке](https://stackoverflow.com/questions/35783964/jenkins-html-publisher-plugin-no-css-is-displayed-when-report-is-viewed-in-j/35785788#35785788).

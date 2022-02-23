@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "status": {
+      "enable": true,
+      "filter": [
+        "200"
+      ],
+      "ignore": []
+    }
+  },
+  "writers": {
+    "html": {
+      "locale": "ru",
+      "filename": "swagger-coverage-report.html"
+    }
+  }
+}

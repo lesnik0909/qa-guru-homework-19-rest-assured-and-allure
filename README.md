@@ -85,7 +85,7 @@ wget -O swagger.json https://petstore.swagger.io/v2/swagger.json
 * Путь к скаченной Swagger документации (ключ ``-s``)
 * Путь к сгенерированным файлам (ключ ``-i``)
 
-**4.** Добавить создание HTML отчета, например, через плагин Publish HTML. В нем указать
+**4.** Добавить создание HTML отчета, например, через плагин ``HTML Publisher``. В нем указать
 
 * HTML directory to archive - ``build``
 * Index page[s] - ``swagger-coverage-report.html`` (название из файла coverage.json)

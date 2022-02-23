@@ -18,6 +18,7 @@ def junitVersion = "5.8.2",
     allureVersion = "2.17.2",
     lombokVersion = "1.18.22",
     jacksonVersion = "2.13.1",
+    aspectJVersion = "1.9.6",
     jsonUnitVersion = "2.28.0",
     swaggerCoverageVersion = "1.4.4"
 
@@ -34,6 +35,7 @@ allure {
 dependencies {
     implementation "org.projectlombok:lombok:$lombokVersion"
     implementation "io.qameta.allure:allure-java-commons:$allureVersion"
+    implementation "org.aspectj:aspectjweaver:$aspectJVersion"
     testImplementation(
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
